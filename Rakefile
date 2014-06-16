@@ -8,7 +8,12 @@ begin
 rescue LoadError
 end
 
+require 'motion-cocoapods'
+
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'mixpanel-motion'
+  app.name = 'rubymotion-mixpanel-example'
+  app.pods do
+    pod 'Mixpanel'
+  end
 end
