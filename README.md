@@ -7,6 +7,7 @@ An example RubyMotion project using Mixpanel
 
 ```ruby
 bundle
+pod setup
 rake pod:install
 rake
 ```
